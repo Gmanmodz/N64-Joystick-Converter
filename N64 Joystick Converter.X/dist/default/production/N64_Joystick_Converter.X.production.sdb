@@ -1,0 +1,234 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15324 ]
+[d frameptr 6 ]
+"11 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\ADC.c
+[v _readADC readADC `(ui  1 e 2 0 ]
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"10 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"4 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"16 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\main.c
+[v _Map Map `(s  1 s 2 Map ]
+"21
+[v _PIC_SETUP PIC_SETUP `(v  1 e 1 0 ]
+"51
+[v _get_y get_y `(s  1 e 2 0 ]
+"61
+[v _get_x get_x `(s  1 e 2 0 ]
+"71
+[v _main main `(v  1 e 1 0 ]
+"546 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\include\pic16f15324.h
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+[s S121 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+"561
+[u S128 . 1 `S121 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES128  1 e 1 @18 ]
+"591
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+[s S138 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+]
+"606
+[u S145 . 1 `S138 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES145  1 e 1 @20 ]
+[s S160 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"656
+[u S167 . 1 `S160 1 . 1 0 ]
+[v _LATAbits LATAbits `VES167  1 e 1 @24 ]
+[s S177 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+]
+"701
+[u S184 . 1 `S177 1 . 1 0 ]
+[v _LATCbits LATCbits `VES184  1 e 1 @26 ]
+"813
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"883
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S286 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GOnDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+"904
+[s S295 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CHS 1 0 :6:2 
+]
+[u S298 . 1 `S286 1 . 1 0 `S295 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES298  1 e 1 @157 ]
+"954
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"9171
+[v _VREGCON VREGCON `VEuc  1 e 1 @2066 ]
+[s S22 . 1 `uc 1 DOZE 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 DOE 1 0 :1:4 
+`uc 1 ROI 1 0 :1:5 
+`uc 1 DOZEN 1 0 :1:6 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"9615
+[s S29 . 1 `uc 1 DOZE0 1 0 :1:0 
+`uc 1 DOZE1 1 0 :1:1 
+`uc 1 DOZE2 1 0 :1:2 
+]
+[u S33 . 1 `S22 1 . 1 0 `S29 1 . 1 0 ]
+[v _CPUDOZEbits CPUDOZEbits `VES33  1 e 1 @2188 ]
+"17551
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+[s S53 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+`uc 1 ANSA5 1 0 :1:5 
+]
+"17566
+[u S60 . 1 `S53 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES60  1 e 1 @7992 ]
+[s S87 . 1 `uc 1 ODCA0 1 0 :1:0 
+`uc 1 ODCA1 1 0 :1:1 
+`uc 1 ODCA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ODCA4 1 0 :1:4 
+`uc 1 ODCA5 1 0 :1:5 
+]
+"17661
+[u S94 . 1 `S87 1 . 1 0 ]
+[v _ODCONAbits ODCONAbits `VES94  1 e 1 @7994 ]
+"17936
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+[s S70 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 ANSC4 1 0 :1:4 
+`uc 1 ANSC5 1 0 :1:5 
+]
+"17951
+[u S77 . 1 `S70 1 . 1 0 ]
+[v _ANSELCbits ANSELCbits `VES77  1 e 1 @8014 ]
+[s S104 . 1 `uc 1 ODCC0 1 0 :1:0 
+`uc 1 ODCC1 1 0 :1:1 
+`uc 1 ODCC2 1 0 :1:2 
+`uc 1 ODCC3 1 0 :1:3 
+`uc 1 ODCC4 1 0 :1:4 
+`uc 1 ODCC5 1 0 :1:5 
+]
+"18051
+[u S111 . 1 `S104 1 . 1 0 ]
+[v _ODCONCbits ODCONCbits `VES111  1 e 1 @8016 ]
+"13 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\main.c
+[v _rotate_right rotate_right `[4]uc  1 e 4 0 ]
+"14
+[v _rotate_left rotate_left `[4]uc  1 e 4 0 ]
+"71
+[v _main main `(v  1 e 1 0 ]
+{
+"76
+[v main@y y `s  1 a 2 26 ]
+"75
+[v main@x x `s  1 a 2 24 ]
+"85
+[v main@y_steps y_steps `s  1 a 2 22 ]
+"84
+[v main@x_steps x_steps `s  1 a 2 20 ]
+"82
+[v main@y_prev y_prev `s  1 a 2 18 ]
+"81
+[v main@x_prev x_prev `s  1 a 2 16 ]
+"88
+[v main@y_out y_out `uc  1 a 1 29 ]
+"87
+[v main@x_out x_out `uc  1 a 1 28 ]
+"138
+} 0
+"51
+[v _get_y get_y `(s  1 e 2 0 ]
+{
+[v get_y@y y `s  1 p 2 14 ]
+"59
+} 0
+"61
+[v _get_x get_x `(s  1 e 2 0 ]
+{
+[v get_x@x x `s  1 p 2 14 ]
+"69
+} 0
+"11 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\ADC.c
+[v _readADC readADC `(ui  1 e 2 0 ]
+{
+[v readADC@channel channel `uc  1 a 1 wreg ]
+[v readADC@channel channel `uc  1 a 1 wreg ]
+"13
+[v readADC@channel channel `uc  1 a 1 4 ]
+"23
+} 0
+"16 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\main.c
+[v _Map Map `(s  1 s 2 Map ]
+{
+[v Map@x x `i  1 p 2 4 ]
+[v Map@inMin inMin `i  1 p 2 6 ]
+[v Map@inMax inMax `i  1 p 2 8 ]
+[v Map@outMin outMin `i  1 p 2 10 ]
+[v Map@outMax outMax `i  1 p 2 12 ]
+"19
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"5 C:\Program Files (x86)\Microchip\xc8\v2.10\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 2 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 1 ]
+[v ___awdiv@counter counter `uc  1 a 1 0 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 6 ]
+[v ___awdiv@dividend dividend `i  1 p 2 8 ]
+"41
+} 0
+"21 C:\Users\Gunnar\Documents\N64 Joystick Converter.X\main.c
+[v _PIC_SETUP PIC_SETUP `(v  1 e 1 0 ]
+{
+"43
+} 0
